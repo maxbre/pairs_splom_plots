@@ -79,24 +79,24 @@ par(op)
 
 ```
 ### splom wtih lattice
-
-
 ```{r}
 require(lattice)
+```
+### group by species and add legend
+```{r}
 splom(~iris[1:4], groups = Species, data = iris, auto.key=TRUE)
 ```
 
+### add correlation coefficients with proportional character in upper panel, smoothing curve in lower panel, format diagonal labels
 
 ```{r}
 
-panel.corval <- function(x, y, digits=2, prefix="", cex.cor, ...)
+panel.corval <- function(x, y,...)
 {
   require(grid)
-  r <- abs(cor(x, y, use = "complete.obs"))
-  txt <- format(c(r, 0.123456789), digits=digits)[1]
-  txt <- paste(prefix, txt, sep="")
-  if (missing(cex.cor)) cex.cor <- 10 / nchar(txt)
-  grid.text(txt, 0.5, 0.5, gp = gpar(cex = cex.cor))
+  r <- cor(x, y, use = "complete.obs")
+  txt<- as.character(format(r, digits=2))
+  grid.text(txt, 0.5, 0.5, gp = gpar(cex = 4*abs(r)))
 }
 
 super.sym <- trellis.par.get("superpose.symbol")
