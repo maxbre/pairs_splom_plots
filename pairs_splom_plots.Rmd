@@ -2,7 +2,7 @@
 ***
 # ...for or pairs and splom (lattice) plots in R
 
-## a few examples by using iris data 
+### a few examples by using iris data 
 ***
 
 ### bare bone pairs plot
