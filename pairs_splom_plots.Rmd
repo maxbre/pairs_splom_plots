@@ -1,6 +1,6 @@
 # my little reminder...
 ***
-# ...for or pairs and splom (lattice) plots in R
+# ...for pairs and splom (lattice) plots in R
 
 ### a few examples by using iris data 
 ***
