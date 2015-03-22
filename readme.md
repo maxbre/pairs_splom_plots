@@ -1,0 +1,3 @@
+# my little reminder...
+***
+# ...for pairs and splom (lattice) plots in R

@@ -1,6 +1,9 @@
-# my little reminder for pairs and splom (lattice) plots
-## some examples by using data iris
-*****
+# my little reminder...
+***
+# ...for or pairs and splom (lattice) plots in R
+
+## a few examples by using data iris data 
+***
 
 ### bare bone pairs plot
 ```{r}
